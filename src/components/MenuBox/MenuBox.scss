@@ -1,0 +1,29 @@
+.menubox {
+	position: relative;
+	transform: rotateX(-15deg) rotateY(30deg);
+	transform-style: preserve-3d;
+	cursor: pointer;
+	
+	.face {
+		position: absolute;
+		text-align: center;
+		color: #bbb;
+		font-weight: bold;
+		font-size: 120%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: all 0.2s;
+	}
+	
+	&:not(.disabled):hover {
+		.face.top, .face.left, .face.front {
+			margin-top: -10px;
+		}
+		
+		.face.shadow {
+			margin-top: 3px;
+			margin-lefT: 5px;
+		}
+	}
+}
