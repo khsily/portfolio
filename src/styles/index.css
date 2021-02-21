@@ -1,5 +1,6 @@
-html, body, #root, #app, .page {
+html, body, #root, #app, #app > div, .page {
 	height: 100%;
+	color: #fff;
 }
 
 body {
@@ -14,4 +15,23 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.frame-enter {
+  position: absolute;
+  opacity: 0;
+	width: 100%;
+}
+.frame-enter-active {
+  opacity: 1;
+  transition: opacity .5s;
+}
+.frame-exit {
+  position: absolute;
+  opacity: 1;
+	width: 100%;
+}
+.frame-exit-active {
+  opacity: 0;
+  transition: opacity .5s;
 }

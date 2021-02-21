@@ -4,7 +4,7 @@ import './NeonSign.scss';
 
 const NeonSign = ({ text, className, ...props }) => {
 	return (
-		<div className={`neon-sign glow ${className ? className : ''}`} {...props}>{text}</div>
+		<pre className={`neon-sign glow ${className ? className : ''}`} {...props}>{text}</pre>
 	);
 }
 

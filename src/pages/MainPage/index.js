@@ -13,7 +13,7 @@ const MainPage = () => {
 				<div className='menu-wrapper'>
 					<NeonSign 
 						className='name-title'
-						text='KHSILY' />
+						text='@KHSILY' />
 					<MenuBox 
 						className='menu-about' 
 						color='#705823' 
